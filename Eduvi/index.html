@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduvi</title>
+    <!-- Shortcut icon -->
+    <link rel="shortcut icon" href="./img/Logo.png">
+    <!-- Css link -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Remix Icon link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header_items">
+                <div class="header_items_logo">
+                    <a href="#">
+                        <img src="img/Logo.png" alt="Header logo">
+                        <p>Eduvi</p>
+                    </a>
+                </div>
+
+                <ul class="header_items_ul">
+                    <li>
+                        <a href="books.html">Shop</a>
+                    </li>
+
+                    <li>
+                        <select name="For_kindergarden" id="For_kindergarden">
+                            <option value="For_Kindergarten" selected>For Kindergarten</option>
+                            <option value="English">English</option>
+                            <option value="Russian">Russian</option>
+                            <option value="Math">Math</option>
+                            <option value="Writing">Writing</option>
+                            <option value="Sport">Sport</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <select name="For_High_School" id="For_High_School">
+                            <option value="For_High_School" selected>For High School</option>
+                            <option value="English">English</option>
+                            <option value="Russian">Russian</option>
+                            <option value="Math">Math</option>
+                            <option value="Writing">Writing</option>
+                            <option value="Sport">Sport</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <select name="For_College" id="For_College">
+                            <option value="For_College" selected>For College</option>
+                            <option value="English">English</option>
+                            <option value="Russian">Russian</option>
+                            <option value="Math">Math</option>
+                            <option value="Writing">Writing</option>
+                            <option value="Sport">Sport</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <select name="Courses" id="Courses">
+                            <option value="Courses" selected>Courses</option>
+                            <option value="English">English</option>
+                            <option value="Russian">Russian</option>
+                            <option value="Math">Math</option>
+                            <option value="Writing">Writing</option>
+                            <option value="Sport">Sport</option>
+                        </select>
+                    </li>
+                </ul>
+
+                <div class="header_items_anchors">
+                    <a href="#" class="cart_anchor">Cart (0) <i class="ri-shopping-bag-line Shopping_icon"></i></a>
+
+                    <a class="My_account" href="#">My Account <i class="ri-account-circle-line Account_icon"></i></a>
+
+                    <div class="header_items_burger">
+                        <a href="#" class="header_items_burger_menu">Menu<i class="ri-menu-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Cart -->
+
+            <div class="modalCart">
+                <div class="rectangle"></div>
+
+                <div class="modalCart_items">
+                    <div class="title">
+                        <i class="ri-shopping-cart-2-line"></i>
+                        <h2>Saved:</h2>
+                    </div>
+                    <hr>
+
+                    <ul>
+                        <li>
+                            <p>Notebook</p>
+                            <i class="ri-delete-bin-line"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal Window Sign Up -->
+
+
+            <div class="modal ">
+                <div class="modal_items">
+                    <div class="modal_items_content">
+
+                        <a href="#">
+                            <img src="img/Logo.png" alt="Header logo">
+                            <p>Eduvi</p>
+                        </a>
+                        <div class="modal_items_content_title">
+                            <h2>Welcome to <br> Eduvi Online <br> Learning Platform</h2>
+                        </div>
+
+                        <div class="modal_items_content_img">
+                            <img src="./img/modal_img.png" alt="modal_img">
+                        </div>
+                    </div>
+
+                    <div class="hr"></div>
+
+                    <div class="modal_items_forms">
+                        <form>
+                            <div class="form_input">
+                                <img src="./img/g+.png" alt="">
+                                <input type="email" class="Signup_with_google_input" placeholder="Signup with google">
+
+                            </div>
+                            <div class="pForm">
+                                <div class="hrr"></div>
+                                <p> Or signup with your email </p>
+                                <div class="hrr"></div>
+                            </div>
+                        </form>
+
+                        <form class="form_two">
+                            <div class="span">
+                                <label for="Full_name">Full name</label> <br>
+                                <input type="text" placeholder="Sodikjon Nurmirzaev">
+                            </div>
+
+                            <div class="span">
+                                <label for="email">Email</label><br>
+                                <input type="email" placeholder="dev_sodikjon_2003@gmail.com">
+                            </div>
+
+                            <div class="span">
+                                <label for="Password">Password</label> <br>
+                                <input type="Password" placeholder="****************">
+                            </div>
+
+                            <div class="check_box_div">
+                                <input type="checkbox" class="checkbox">
+                                <label class="label_check">I agreed to the <span>Terms & Conditions</span></label>
+                            </div>
+
+                            <div class="button_SignUp">
+                                <button class="SignUp">Sign Up</button>
+                            </div>
+
+                            <div class="anchors">
+                                <span>Alreay have account?
+                                    <a href="#">Sign in</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal SignUp">
+                <div class="modal_items">
+                    <div class="modal_items_content">
+
+                        <a href="#">
+                            <img src="img/Logo.png" alt="Header logo">
+                            <p>Eduvi</p>
+                        </a>
+                        <div class="modal_items_content_title">
+                            <h2>Welcome to <br> Eduvi Online <br> Learning Platform</h2>
+                        </div>
+
+                        <div class="modal_items_content_img">
+                            <img src="./img/modal_img.png" alt="modal_img">
+                        </div>
+                    </div>
+
+                    <div class="hr"></div>
+
+                    <div class="modal_items_forms">
+                        <form>
+                            <div class="form_input">
+                                <img src="./img/g+.png" alt="">
+                                <input type="email" class="Signup_with_google_input" placeholder="Signup with google">
+
+                            </div>
+                            <div class="pForm">
+                                <div class="hrr"></div>
+                                <p> Or signup with your email </p>
+                                <div class="hrr"></div>
+                            </div>
+                        </form>
+
+                        <form class="form_two">
+                            <!-- <div class="span">
+                                <label for="Full_name">Full name</label> <br>
+                                <input type="text" placeholder="Sodikjon Nurmirzaev">
+                            </div> -->
+
+                            <div class="span">
+                                <label for="email">Email</label><br>
+                                <input type="email" placeholder="dev_sodikjon_2003@gmail.com">
+                            </div>
+
+                            <div class="span">
+                                <label for="Password">Password</label> <br>
+                                <input type="Password" placeholder="****************">
+                            </div>
+
+                            <div class="check_box_div">
+                                <input type="checkbox" class="checkbox">
+                                <label class="label_check">I agreed to the <span>Terms & Conditions</span></label>
+                            </div>
+
+                            <div class="button_SignUp">
+                                <button class="SignUp">Sign Up</button>
+                            </div>
+
+                            <div class="anchors">
+                                <span>Alreay have account?
+                                    <a href="#">Sign in</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navbar -->
+
+            <div class="modal_nav active_modal_nav">
+                <div class="modal_nav_items">
+
+                    <i class="ri-close-line remove"></i>
+                    <div class="modal_nav_items_anchors">
+                        <ul>
+                            <li>
+                                <a href="#">Shop</a>
+                            </li>
+
+                            <li>
+                                <select name="For_kindergarden" id="For_kindergarden">
+                                    <option value="For_Kindergarten" selected>For Kindergarten</option>
+                                    <option value="English">English</option>
+                                    <option value="Russian">Russian</option>
+                                    <option value="Math">Math</option>
+                                    <option value="Writing">Writing</option>
+                                    <option value="Sport">Sport</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <select name="For_High_School" id="For_High_School">
+                                    <option value="For_High_School" selected>For High School</option>
+                                    <option value="English">English</option>
+                                    <option value="Russian">Russian</option>
+                                    <option value="Math">Math</option>
+                                    <option value="Writing">Writing</option>
+                                    <option value="Sport">Sport</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <select name="For_College" id="For_College">
+                                    <option value="For_College" selected>For College</option>
+                                    <option value="English">English</option>
+                                    <option value="Russian">Russian</option>
+                                    <option value="Math">Math</option>
+                                    <option value="Writing">Writing</option>
+                                    <option value="Sport">Sport</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <select name="Courses" id="Courses">
+                                    <option value="Courses" selected>Courses</option>
+                                    <option value="English">English</option>
+                                    <option value="Russian">Russian</option>
+                                    <option value="Math">Math</option>
+                                    <option value="Writing">Writing</option>
+                                    <option value="Sport">Sport</option>
+                                </select>
+                            </li>
+                        </ul>
+
+                        <div class="modal_nav_items_anchor_btns">
+                            <div class="modal_nav_items_anchor_btns_cart">
+                                <a href="#" class="cart_saved">Cart (0) <i class="ri-shopping-bag-line"></i></a>
+                            </div>
+                            <div class="modal_nav_items_anchor_btns_cart">
+                                <a class="My_account" href="#">My Account <i
+                                        class="ri-account-circle-line Account_icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="bg_imgs">
+                    <img src="./img/brain.png" class="brain_bg" alt="brain">
+                    <img src="./img/Lamp.png" class="lamp_bg" alt="lamp">
+                    <img src="./img/4.png" class="four_bg" alt="4">
+                    <img src="./img/1.png" class="one_bg" alt="1">
+                </div>
+                <div class="hero_items">
+                    <div class="hero_items_content">
+                        <div class="hero_items_content_text">
+                            <p class="hero_items_content_text_title">Never Stop Learning</p>
+                        </div>
+
+                        <h2>Grow up your skills <br> by online courses <br> with Eduvi</h2>
+
+                        <p class="text">Eduvi is a Global training provider based across the UK that specialises in
+                            accredited and bespoke training courses. We crush the barriers togetting a degree.</p>
+
+
+                        <form class="tabled_form">
+                            <select name="hero_kindergarden" id="hero_kindergarden">
+                                <option value="HeroFor_Kindergarten" selected>For Kindergarten</option>
+                                <option value="HeroEnglish">English</option>
+                                <option value="HeroRussian">Russian</option>
+                                <option value="HeroMath">Math</option>
+                                <option value="HeroWriting">Writing</option>
+                                <option value="HeroSport">Sport</option>
+                            </select>
+
+                            <div class="hr"></div>
+
+                            <input type="text" placeholder="Class/Course">
+
+                            <button type="button" class="Search_Btn"><i class="ri-search-line"></i>Search</button>
+                        </form>
+
+                        <form class="mobil_form">
+                            <select name="hero_kindergarden" id="hero_kindergarden">
+                                <option value="HeroFor_Kindergarten" selected>For Kindergarten</option>
+                                <option value="HeroEnglish">English</option>
+                                <option value="HeroRussian">Russian</option>
+                                <option value="HeroMath">Math</option>
+                                <option value="HeroWriting">Writing</option>
+                                <option value="HeroSport">Sport</option>
+                            </select>
+
+                            <input type="text" placeholder="Class/Course">
+
+                            <button type="button" class="Search_Btn"><i class="ri-search-line"></i>Search</button>
+                        </form>
+                    </div>
+
+                    <div class="hero_items_img">
+                        <img src="./img/bg_pink.png" class="img_bg_pink" alt="bg_pink">
+                        <img class="school_boy" src="./img/school_hero.png" alt="school_boy">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sources">
+            <div class="container">
+                <div class="sources_items">
+                    <div class="sources_items_title">
+                        <h3>High quality video, audio <br class="br"> & live classes</h3>
+                        <p class="p">High-definition video is video of higher resolution and quality than
+                            standard-definition.While there is no <br class="br"> standardized meaning for
+                            high-definition, generally any video image with considerably more than <br class="br"> 480
+                            vertical scan lines or 576 vertical lines is considered high-definition.</p>
+
+                        <p class="p_mobile">High-definition video is video of higher resolution and quality than
+                            standard definition. While there is no standardized</p>
+                    </div>
+
+                    <div class="visit_buttons">
+                        <button>Visit Courses</button>
+                    </div>
+
+                    <div class="sources_items_videoCall">
+                        <div class="sources_items_videoCall_img">
+                            <img class="" src="./img/sources_video.png" alt="video">
+
+                            <div class="Little_girl_div">
+                                <img class="Little_girl" src="./img/Sources_Little_Girl.png" alt="Sources_Little_Girl">
+                            </div>
+
+                            <div class="call">
+                                <img src="./img/call.svg" alt="call.svg">
+                            </div>
+
+                            <div class="arrow_top">
+                                <i class="ri-arrow-up-s-line"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sources_items_classes">
+
+                        <div class="sources_items_classes_audio">
+                            <div class="sources_items_classes_audio_icon">
+                                <i class="ri-volume-up-fill"></i>
+                            </div>
+
+                            <div class="sources_items_classes_audio_desc">
+                                <p>Audio Classes</p>
+                            </div>
+                        </div>
+
+                        <div class="sources_items_classes_audio">
+                            <div class="sources_items_classes_audio_icon Live">
+                                <img src="./img/Live.png" alt="live">
+                            </div>
+
+                            <div class="sources_items_classes_audio_desc">
+                                <p>Live Classes</p>
+                            </div>
+                        </div>
+
+                        <div class="sources_items_classes_audio">
+                            <div class="sources_items_classes_audio_icon Play_icon">
+                                <i class="ri-play-circle-fill Play"></i>
+                            </div>
+
+                            <div class="sources_items_classes_audio_desc">
+                                <p>Recorded Class</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="qualify">
+            <div class="container">
+                <div class="qualify_items">
+                    <div class="qualify_items_title">
+                        <h3>Qualified lessons for students</h3>
+                        <p>A lesson or class is a structured period of time where learning is intended to occur. It
+                            involves one or more students being taught by a teacher or instructor.</p>
+                    </div>
+
+                    <div class="qualify_items_anchors">
+                        <ul>
+                            <li>
+                                <a href="#">Kindergarten</a>
+                            </li>
+
+                            <li>
+                                <a href="#">High School</a>
+                            </li>
+
+                            <li>
+                                <a href="#">College</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="qualify_items_standards">
+
+                        <div class="card">
+                            <div class="card_num">
+                                <img src="./img/one.png" alt="one">
+                            </div>
+
+                            <div class="card_title">
+                                <h4>Standard One</h4>
+                            </div>
+
+                            <div class="card_desc">
+                                <p>Standard 1 is a foundation Standard that reflects 7 <br> important concepts...</p>
+                            </div>
+
+                            <div class="card_btn">
+                                <button type="button" class="card_button">Class Details</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card_num">
+                                <img src="./img/two.png" alt="two">
+                            </div>
+
+                            <div class="card_title">
+                                <h4>Standard Two</h4>
+                            </div>
+
+                            <div class="card_desc">
+                                <p>Standard 2 builds on the foundations of Standard 1 and includes requirements...</p>
+                            </div>
+
+                            <div class="card_btn">
+                                <button type="button" class="card_button">Class Details</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card_num">
+                                <img src="./img/three.png" alt="three">
+                            </div>
+
+                            <div class="card_title">
+                                <h4>Standard Three</h4>
+                            </div>
+
+                            <div class="card_desc">
+                                <p>Standard 3 of the Aged Care Quality Standards applies to all services delivering
+                                    personal...</p>
+                            </div>
+
+                            <div class="card_btn">
+                                <button type="button" class="card_button">Class Details</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card_num">
+                                <img src="./img/four.png" alt="four">
+                            </div>
+
+                            <div class="card_title">
+                                <h4>Standard Four</h4>
+                            </div>
+
+                            <div class="card_desc">
+                                <p>Standard 4 of the Aged Care Quality Standards focuses on services and supports...</p>
+                            </div>
+
+                            <div class="card_btn">
+                                <button type="button" class="card_button">Class Details</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card_num">
+                                <img src="./img/five.png" alt="five">
+                            </div>
+
+                            <div class="card_title">
+                                <h4>Standard Five</h4>
+                            </div>
+
+                            <div class="card_desc">
+                                <p>Standard 5 Learning Resources. Learning Resources ensure that the school has the...
+                                </p>
+                            </div>
+
+                            <div class="card_btn">
+                                <button type="button" class="card_button">Class Details</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card_num">
+                                <img src="./img/six.png" alt="six">
+                            </div>
+
+                            <div class="card_title">
+                                <h4>Standard One</h4>
+                            </div>
+
+                            <div class="card_desc">
+                                <p>Standard 6 requires an organisation to have a system to resolve complaints...</p>
+                            </div>
+
+                            <div class="card_btn">
+                                <button type="button" class="card_button">Class Details</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card_num">
+                                <img src="./img/seven.png" alt="seven">
+                            </div>
+
+                            <div class="card_title">
+                                <h4>Standard Seven</h4>
+                            </div>
+
+                            <div class="card_desc">
+                                <p>Standard 7 Blood Management mandates that leaders of health service organisations...
+                                </p>
+                            </div>
+
+                            <div class="card_btn">
+                                <button type="button" class="card_button">Class Details</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card_num">
+                                <img src="./img/eight.png" alt="">
+                            </div>
+
+                            <div class="card_title">
+                                <h4>Standard Eight</h4>
+                            </div>
+
+                            <div class="card_desc">
+                                <p>Standard 8 Course from NCERT Solutions help students to understand...</p>
+                            </div>
+
+                            <div class="card_btn">
+                                <button type="button" class="card_button">Class Details</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="qualify_items_btns">
+                        <button class="visit_more_classes" type="button">
+                            Visit More Classes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="collage_Level">
+            <div class="container">
+                <div class="collage_Level_items">
+                    <div class="collage_Level_items_card">
+
+                        <div class="collage_Level_items_card_content">
+                            <div class="collage_Level_items_card_content_title">
+                                <h5>College Level</h5>
+                            </div>
+
+                            <div class="collage_Level_items_card_content_add">
+                                <p>Don’t waste time in COVID-19 pandemic.
+                                    Develop your skills.</p>
+                            </div>
+
+                            <div class="collage_Level_items_card_content_desc">
+                                <p>
+                                    High-definition video is video of higher resolution and quality than
+                                    standard-definition. While there is no standardized <br>
+                                    meaning for high-definition, generally any video.
+                                </p>
+                            </div>
+
+                            <div class="collage_Level_items_card_content_btn">
+                                <button type="button" class="Registation">Registation Now</button>
+                            </div>
+                        </div>
+
+                        <div class="collage_Level_items_card_img">
+                            <img src="./img/Css.png" class="Css" alt="css">
+                            <img src="./img/Php.png" class="Php" alt="php">
+                            <img src="./img/Java.png" class="Java" alt="java">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mentor">
+            <div class="container">
+                <div class="mentor_items">
+                    <div class="mentor_items_img">
+                        <img src="./img/full.png" alt="meneger">
+                    </div>
+
+
+                    <div class="mentor_items_content">
+                        <div class="mentor_items_content_p">
+                            <p class="title">Want to share your knowledge? Join us <br> a Mentor</p>
+
+                            <p>High-definition video is video of higher resolution <br> and quality than
+                                standard-definition.
+                                While there <br> is no standardized meaning for high-definition, <br> generally any
+                                video.</p>
+                        </div>
+
+                        <div class="mentor_items_content_btns">
+                            <button type="button" class="Career_btn">Career Information</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe_items">
+                    <div class="subscribe_items_content">
+
+                        <div class="subscribe_items_content_subscribers">
+                            <div class="Graduate">
+                                <img src="./img/Graduate.png" alt="Graduate">
+                            </div>
+
+                            <div class="student">
+                                <img src="./img/student.png" alt="student">
+                            </div>
+
+                            <div class="child">
+                                <img src="./img/child.png" alt="child">
+                            </div>
+                        </div>
+
+                        <div class="subscribe_items_content_text">
+                            <p class="text">Subscribe For Get Update <br class="br"> Every New Courses</p>
+
+                            <p class="desc">20k+ students daily learn with Eduvi. Subscribe for new courses.</p>
+
+                            <form class="form_sub">
+                                <div class="input_div">
+                                    <input type="text" placeholder="enter your email">
+                                    <button>Subscribe</button>
+                                </div>
+                            </form>
+
+                            <form class="mobile_sub">
+                                <div class="input_div_mobil">
+                                    <input type="text" placeholder="enter your email">
+                                    <button>Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="subscribe_items_content_subscribers2">
+                            <div class="guy">
+                                <img src="./img/guy.png" alt="guy">
+                            </div>
+
+                            <div class="IT">
+                                <img src="./img//IT.png" alt="IT">
+                            </div>
+
+                            <div class="child_boy">
+                                <img src="./img/child_boy.png" alt="child_boy">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_items">
+                <div class="footer_items_logo">
+                    <a href="#">
+                        <img src=".//img/Logo.png" alt="Logo">
+                        <h1>Eduvi</h1>
+                    </a>
+
+                    <div class="footer_items_logo_icons">
+                        <i class="ri-facebook-fill"></i>
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-twitter-fill"></i>
+                        <i class="ri-linkedin-box-fill"></i>
+                    </div>
+
+                    <div class="footer_items_logo_info">
+                        <a href="#">©2021 Eduvi.co</a>
+                        <p>Eduvi is a registered
+                            trademark of Eduvi.co</p>
+                    </div>
+                </div>
+
+                <div class="footer_items_courses">
+                    <p class="title">Courses</p>
+                    <ul>
+                        <li>
+                            <a href="#">Classroom courses</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Virtual classroom courses</a>
+                        </li>
+
+                        <li>
+                            <a href="#">E-learning courses</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Video Courses</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Offline Courses</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_items_courses">
+                    <p class="title">Community</p>
+                    <ul>
+                        <li>
+                            <a href="#">Learners</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Parteners</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Developers</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Transactions</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Teaching Center</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_items_courses">
+                    <p class="title">Quick links</p>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Professional Education</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Courses</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Admissions</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Testimonial</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Programs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_items_courses">
+                    <p class="title">More</p>
+                    <ul>
+                        <li>
+                            <a href="#">Press</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Investors</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Terms</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

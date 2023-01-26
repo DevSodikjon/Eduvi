@@ -1,0 +1,479 @@
+.sources {
+    background: #D3D3D3;
+    background-image: url('../img/Pattern.png');
+    background-position: 91% 38%;
+    background-repeat: no-repeat;
+
+    &_items {
+        padding: 30px;
+
+        &_title {
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 100px;
+
+            h3 {
+                margin: 0 auto;
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 55px;
+                text-align: center;
+                color: #0A033C;
+            }
+
+            p {
+                margin-top: 20px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
+                color: #5D5A6F;
+            }
+        }
+
+        .visit_buttons {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 60px;
+
+            button {
+                border: none;
+                padding: 20px 30px;
+                background: #9C4DF4;
+                border-radius: 10px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+
+            button:focus {
+                @include hoverAndClick;
+            }
+        }
+
+        &_videoCall {
+
+            &_img {
+                width: 84%;
+                margin: 0 auto;
+                background: #FFFFFF;
+                box-shadow: 0px 50px 170px rgba(0, 0, 0, 0.05);
+                border-radius: 20px;
+                padding: 30px;
+                position: relative;
+
+
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+
+                .Little_girl_div {
+                    width: 17%;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    bottom: 10%;
+                    left: 5%;
+                    padding: 10px;
+                    border-radius: 10px;
+
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+
+                .call {
+                    width: 5%;
+                    height: 9%;
+                    padding: 14px;
+                    border-radius: 550px;
+                    position: absolute;
+                    bottom: 13%;
+                    left: 50%;
+                    background: #FF6652;
+                    text-align: center;
+
+
+                }
+
+                .arrow_top {
+                    width: 5%;
+                    height: 9%;
+                    padding-top: 20px;
+                    border-radius: 500px;
+                    position: absolute;
+                    bottom: 13%;
+                    right: 6%;
+                    text-align: center;
+                    background: #9C4DF4;
+
+                    i {
+                        font-size: 18.2px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        &_classes {
+            width: 84%;
+            margin: 0 auto;
+            display: flex;
+            margin-top: 40px;
+            justify-content: space-between;
+
+
+            &_audio {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                background: #FFFFFF;
+                border-radius: 10px;
+                padding: 15px 20px;
+
+                &_icon {
+                    padding: 20px 20px;
+                    background: #FFF4F2;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        font-size: 30px;
+                        color: red;
+                    }
+                }
+
+                &_desc {
+                    // padding: 37px 57.3px 38px 20px;
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 25px;
+                    color: #0A033C;
+                }
+            }
+
+            .Live {
+                background: #F8F2FF;
+            }
+
+            .Play_icon {
+                background: #E6FFF3;
+
+                .Play {
+                    color: #00C968;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:$tabled) {
+
+    .sources {
+        background: #D3D3D3;
+        background-image: url('../img/Pattern.png');
+        background-position: 93% 46%;
+        background-repeat: no-repeat;
+
+        .sources_items_title {
+            .p {
+                display: flex !important;
+                text-align: center;
+            }
+        }
+
+
+        .sources_items_videoCall {
+
+            &_img {
+                width: 84%;
+                margin: 0 auto;
+                background: #FFFFFF;
+                box-shadow: 0px 50px 170px rgba(0, 0, 0, 0.05);
+                border-radius: 20px;
+                padding: 30px;
+                position: relative;
+
+
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+
+                .Little_girl_div {
+                    width: 17%;
+                    background-color: #FFFFFF;
+                    position: absolute;
+                    bottom: 10%;
+                    left: 5%;
+                    padding: 10px;
+                    border-radius: 10px;
+
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+
+                .call {
+                    width: 5%;
+                    height: 9%;
+                    padding: 14px;
+                    border-radius: 550px;
+                    position: absolute;
+                    bottom: 13%;
+                    left: 50%;
+                    background: #FF6652;
+                    text-align: center;
+
+                    img {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 5px;
+                    }
+
+                }
+
+                .arrow_top {
+                    width: 5%;
+                    height: 8.5%;
+                    border-radius: 550px;
+                    position: absolute;
+                    bottom: 13%;
+                    right: 6%;
+                    background: #9C4DF4;
+                    position: absolute;
+
+                    i {
+                        position: relative;
+                        bottom: 10px;
+                        font-size: 18.2px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        .sources_items_classes {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 22px;
+
+            &_audio {
+                display: flex;
+                align-items: center;
+                background: #FFFFFF;
+                border-radius: 10px;
+
+                &_icon {
+                    padding: 14px 12px;
+                    background: #FFF4F2;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        font-size: 20px;
+                        color: red;
+                    }
+
+                }
+
+                .Live {
+                    padding: 14px 12px;
+                    background: #FFF4F2;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 20px;
+                    }
+                }
+
+                &_desc {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: #0A033C;
+                }
+            }
+
+
+
+        }
+    }
+}
+
+
+@media screen and (max-width:$phone) {
+
+    .sources {
+        width: 100%;
+        background: #D3D3D3;
+        background-image: none !important;
+
+        &_items {
+            padding: 15px;
+
+            .sources_items_title {
+                width: 100%;
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 32px;
+                    text-align: center;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+                .p {
+                    display: none !important;
+                }
+
+                .p_mobile {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #5D5A6F;
+                }
+            }
+
+            .sources_items_videoCall {
+
+                &_img {
+                    width: 100%;
+                    margin: 0 auto;
+                    background: #FFFFFF;
+                    box-shadow: 0px 50px 170px rgba(0, 0, 0, 0.05);
+                    border-radius: 20px;
+                    padding: 7px;
+                    position: relative;
+
+
+                    img {
+                        width: 100%;
+                        border-radius: 20px;
+                    }
+
+                    .Little_girl_div {
+                        width: 17%;
+                        background-color: #FFFFFF;
+                        position: absolute;
+                        bottom: 10%;
+                        left: 5%;
+                        padding: 4px;
+                        border-radius: 10px;
+
+                        img {
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .call {
+                        width: 5%;
+                        height: 9%;
+                        padding: 14px;
+                        border-radius: 550px;
+                        position: absolute;
+                        bottom: 13%;
+                        left: 50%;
+                        background: #FF6652;
+                        text-align: center;
+
+                        img {
+                            display: flex;
+                            align-items: center;
+                            margin-top: 5px;
+                            font-size: 18px;
+                        }
+
+                    }
+
+                    .arrow_top {
+                        width: 10%;
+                        height: 16.5%;
+                        border-radius: 550px;
+                        position: absolute;
+                        bottom: 13%;
+                        right: 6%;
+                        background: #9C4DF4;
+                        position: absolute;
+
+                        i {
+                            position: relative;
+                            bottom: 14px;
+                            font-size: 18.2px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+
+            .sources_items_classes {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                margin-left: 0;
+                margin-right: 0;
+
+                &_audio {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    background: #FFFFFF;
+                    border-radius: 10px;
+                    padding: 14px 17px;
+
+                    &_icon {
+                        padding: 7px 7px;
+                        background: #FFF4F2;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+
+                        i {
+                            font-size: 15px !important;
+                            color: red;
+                        }
+
+                    }
+
+                    .Live {
+                        padding: 7px 7px;
+                        background: #FFF4F2;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            width: 15px;
+                        }
+                    }
+
+                    &_desc {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: #0A033C;
+                    }
+                }
+
+
+
+            }
+        }
+
+    }
+}

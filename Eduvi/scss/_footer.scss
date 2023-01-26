@@ -1,0 +1,324 @@
+footer {
+    background: #D3D3D3;
+
+    .footer_items {
+        padding: 80px 30px;
+        display: flex;
+        justify-content: space-between;
+
+        &_logo {
+            width: 185px;
+
+            a {
+                display: flex;
+                gap: 6px;
+                text-decoration: none;
+
+                img {
+                    width: 25px;
+                    height: 30px;
+                }
+
+                h1 {
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 30px;
+                    color: #0A033C;
+                }
+            }
+
+            &_icons {
+                margin-top: 32px;
+                margin-bottom: 40px;
+                display: flex;
+
+                // gap: 6px;
+                i {
+                    color: #0A033C;
+                    font-size: 16px;
+                    border-radius: 50%;
+                    padding: 11px;
+                }
+
+                i:hover {
+                    cursor: pointer;
+                    background-color: #FF6652;
+                    border-radius: 50%;
+                    padding: 11px;
+                    color: #FFFFFF;
+                }
+            }
+
+            &_info {
+                a {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #5D5A6F;
+                }
+
+                p {
+                    margin-top: 15px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #5D5A6F;
+                }
+            }
+
+
+        }
+
+        &_courses {
+            .title {
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 27px;
+                color: #0A033C;
+                padding-bottom: 17px;
+            }
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    padding-bottom: 17px;
+
+                    a {
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 16px;
+                        color: #5D5A6F;
+                    }
+
+                    a:hover {
+                        color: #0A033C;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+}
+
+@media screen and (max-width:$tabled) {
+    footer {
+        background: #D3D3D3;
+
+        .footer_items {
+            padding: 80px 30px;
+            display: flex;
+            justify-content: space-between;
+
+            &_logo {
+                width: 185px;
+
+                a {
+                    display: flex;
+                    gap: 6px;
+                    text-decoration: none;
+
+                    img {
+                        width: 25px;
+                        height: 30px;
+                    }
+
+                    h1 {
+                        font-weight: 600;
+                        font-size: 30px;
+                        line-height: 30px;
+                        color: #0A033C;
+                    }
+                }
+
+                &_icons {
+                    margin-top: 32px;
+                    margin-bottom: 40px;
+                    display: flex;
+
+                    // gap: 6px;
+                    i {
+                        color: #0A033C;
+                        font-size: 16px;
+                        border-radius: 50%;
+                        padding: 11px;
+                    }
+
+                    i:hover {
+                        cursor: pointer;
+                        background-color: #FF6652;
+                        border-radius: 50%;
+                        padding: 11px;
+                        color: #FFFFFF;
+                    }
+                }
+
+                &_info {
+                    a {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #5D5A6F;
+                    }
+
+                    p {
+                        margin-top: 15px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #5D5A6F;
+                    }
+                }
+
+
+            }
+
+            &_courses {
+                .title {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #0A033C;
+                    padding-bottom: 17px;
+                }
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        padding-bottom: 17px;
+
+                        a {
+                            text-decoration: none;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: #5D5A6F;
+                        }
+
+                        a:hover {
+                            color: #0A033C;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width:$phone) {
+    footer {
+        background: #D3D3D3;
+
+        .footer_items {
+            padding: 80px 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            &_logo {
+                width: 100%;
+
+                a {
+                    display: flex;
+                    gap: 6px;
+                    text-decoration: none;
+
+                    img {
+                        width: 25px;
+                        height: 30px;
+                    }
+
+                    h1 {
+                        font-weight: 600;
+                        font-size: 30px;
+                        line-height: 30px;
+                        color: #0A033C;
+                    }
+                }
+
+                &_icons {
+                    margin-top: 32px;
+                    margin-bottom: 40px;
+                    display: flex;
+
+                    // gap: 6px;
+                    i {
+                        color: #0A033C;
+                        font-size: 16px;
+                        border-radius: 50%;
+                        padding: 11px;
+                    }
+
+                    i:hover {
+                        cursor: pointer;
+                        background-color: #FF6652;
+                        border-radius: 50%;
+                        padding: 11px;
+                        color: #FFFFFF;
+                    }
+                }
+
+                &_info {
+                   
+                    a {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #5D5A6F;
+                    }
+
+                    p {
+                        margin-top: 15px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #5D5A6F;
+                    }
+                }
+
+
+            }
+
+            &_courses {
+                margin-top: 30px;
+                .title {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #0A033C;
+                    padding-bottom: 17px;
+                }
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        padding-bottom: 17px;
+
+                        a {
+                            text-decoration: none;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: #5D5A6F;
+                        }
+
+                        a:hover {
+                            color: #0A033C;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}

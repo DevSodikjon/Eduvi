@@ -1,0 +1,465 @@
+.subscribe {
+    background: #D3D3D3;
+
+    .subscribe_items {
+        padding: 30px;
+
+        .subscribe_items_content {
+            background: #0A033C;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 80px;
+
+            .subscribe_items_content_subscribers {
+                width: 20%;
+                position: relative;
+
+                .Graduate {
+                    img {
+                        width: 26%;
+                        position: absolute;
+                        top: 15%;
+                        left: 17%;
+                    }
+
+                }
+
+                .student {
+                    img {
+                        width: 26%;
+                        position: absolute;
+                        top: 44%;
+                        left: 75%;
+                    }
+                }
+
+                .child {
+
+                    img {
+                        width: 26%;
+                        position: absolute;
+                        top: 83%;
+                        left: 31%;
+                    }
+                }
+
+
+            }
+
+            .subscribe_items_content_text {
+                width: 60%;
+                margin-top: 80px;
+
+                .text {
+                    font-weight: 700;
+                    font-size: 45px;
+                    line-height: 55px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+
+                .desc {
+                    margin-top: 20px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.7);
+                }
+
+                form {
+                    margin-top: 40px;
+                    // padding: 0px 10px;
+
+                    .input_div {
+                        width: 76%;
+                        margin: 0 auto;
+                        background: rgba(255, 255, 255, 0.2);
+                        border-radius: 10px;
+
+                        input {
+                            width: 76.8%;
+                            padding: 15px 20px;
+                            background: none;
+                            border-radius: 10px 0px 0px 10px;
+                            border: none;
+                            color: #FFFFFF;
+                        }
+
+                        button {
+                            border: none;
+                            padding: 15px 32px;
+                            background: #9C4DF4;
+                            border-radius: 0px 10px 10px 0px;
+                            font-weight: 500;
+                            line-height: 19px;
+                            text-align: right;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+
+                .mobile_sub {
+                    display: none;
+                }
+            }
+
+            .subscribe_items_content_subscribers2 {
+                width: 20%;
+                position: relative;
+
+                .guy {
+
+                    img {
+                        width: 26%;
+                        position: absolute;
+                        top: 15%;
+                        right: 28%;
+                    }
+                }
+
+                .IT {
+
+                    img {
+                        width: 26%;
+                        position: absolute;
+                        top: 58%;
+                        right: 75%;
+                    }
+                }
+
+                .child_boy {
+                    img {
+                        width: 26%;
+                        position: absolute;
+                        top: 83%;
+                        right: 11%;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width:$tabled) {
+    .subscribe {
+        background: #D3D3D3;
+
+        .subscribe_items {
+            padding: 30px;
+
+            .subscribe_items_content {
+                background: #0A033C;
+                border-radius: 20px;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 80px;
+
+                .subscribe_items_content_subscribers {
+                    width: 20%;
+                    position: relative;
+
+                    .Graduate {
+                        img {
+                            position: absolute;
+                            top: 37%;
+                            left: 17%;
+                        }
+
+                    }
+
+                    .student {
+                        img {
+                            position: absolute;
+                            top: 60%;
+                            left: 75%;
+                        }
+                    }
+
+                    .child {
+
+                        img {
+                            position: absolute;
+                            top: 94%;
+                            left: 31%;
+                        }
+                    }
+
+
+                }
+
+                .subscribe_items_content_text {
+                    width: 60%;
+                    margin-top: 80px;
+
+                    .text {
+                        font-weight: 700;
+                        font-size: 35px;
+                        line-height: 40px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+
+                    .desc {
+                        margin-top: 20px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 28px;
+                        text-align: center;
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+
+                    form {
+                        margin-top: 40px;
+
+                        .input_div {
+                            width: 82%;
+                            margin: 0 auto;
+                            background: rgba(255, 255, 255, 0.2);
+                            border-radius: 10px;
+
+                            input {
+                                width: 70.5%;
+                                padding: 15px 20px;
+                                background: none;
+                                border-radius: 10px 0px 0px 10px;
+                                // border: none;
+                                color: #FFFFFF;
+                            }
+
+                            button {
+                                border: none;
+                                padding: 15px 32px;
+                                background: #9C4DF4;
+                                border-radius: 0px 10px 10px 0px;
+                                font-weight: 500;
+                                line-height: 19px;
+                                text-align: right;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+
+                    .mobile_sub {
+                        display: none;
+                    }
+                }
+
+                .subscribe_items_content_subscribers2 {
+                    width: 20%;
+                    position: relative;
+
+                    .guy {
+
+                        img {
+                            position: absolute;
+                            top: 22%;
+                            right: 28%;
+                        }
+                    }
+
+                    .IT {
+
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            right: 75%;
+                        }
+                    }
+
+                    .child_boy {
+                        img {
+                            position: absolute;
+                            top: 83%;
+                            right: 11%;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:$phone) {
+    .subscribe {
+        background: #D3D3D3;
+
+        .subscribe_items {
+            padding: 30px;
+
+            .subscribe_items_content {
+                background: #0A033C;
+                border-radius: 20px;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0px !important;
+
+                .subscribe_items_content_subscribers {
+                    width: 20%;
+                    position: relative;
+                    display: none;
+
+                    .Graduate {
+                        img {
+                            position: absolute;
+                            top: 37%;
+                            left: 17%;
+                        }
+
+                    }
+
+                    .student {
+                        img {
+                            position: absolute;
+                            top: 60%;
+                            left: 75%;
+                        }
+                    }
+
+                    .child {
+
+                        img {
+                            position: absolute;
+                            top: 94%;
+                            left: 31%;
+                        }
+                    }
+
+
+                }
+
+                .subscribe_items_content_text {
+                    width: 100%;
+                    margin-top: 0px !important;
+                    padding: 40px 20px;
+
+                    .text {
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 32px;
+                        text-align: center;
+                        color: #FFFFFF;
+
+                        .br {
+                            display: none;
+                        }
+                    }
+
+                    .desc {
+                        margin-top: 20px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: center;
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+
+                    .form_sub {
+                        margin-top: 40px;
+                        display: none;
+
+                        .input_div {
+                            width: 82%;
+                            margin: 0 auto;
+                            background: rgba(255, 255, 255, 0.2);
+                            border-radius: 10px;
+
+                            input {
+                                width: 70.5%;
+                                padding: 15px 20px;
+                                background: none;
+                                border-radius: 10px 0px 0px 10px;
+                                // border: none;
+                                color: #FFFFFF;
+                            }
+
+                            button {
+                                border: none;
+                                padding: 15px 32px;
+                                background: #9C4DF4;
+                                border-radius: 0px 10px 10px 0px;
+                                font-weight: 500;
+                                line-height: 19px;
+                                text-align: right;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+
+                    .mobile_sub {
+                        width: 100%;
+                        display: flex;
+
+                        .input_div_mobil {
+                            width: 100%;
+
+                            input {
+                                width: 100%;
+                                padding: 10px 15px;
+                                margin-bottom: 20px;
+                                background: rgba(255, 255, 255, 0.2);
+                                border-radius: 5px;
+                                border: none;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 30px;
+
+                            }
+
+                            button {
+                                width: 100%;
+                                padding: 10px 0px;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 30px;
+                                color: #FFFFFF;
+                                background: #9C4DF4;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+
+                .subscribe_items_content_subscribers2 {
+                    width: 20%;
+                    position: relative;
+                    display: none;
+
+                    .guy {
+
+                        img {
+                            position: absolute;
+                            top: 22%;
+                            right: 28%;
+                        }
+                    }
+
+                    .IT {
+
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            right: 75%;
+                        }
+                    }
+
+                    .child_boy {
+                        img {
+                            position: absolute;
+                            top: 83%;
+                            right: 11%;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}

@@ -1,0 +1,237 @@
+.qualify {
+    background: #D3D3D3;
+
+    &_items {
+        padding: 30px;
+        padding-top: 150px;
+
+        &_title {
+            width: 100%;
+            margin: 0 auto;
+
+            h3 {
+                font-weight: 700;
+                margin-bottom: 20px;
+                font-size: 45px;
+                line-height: 55px;
+                text-align: center;
+                color: #0A033C;
+            }
+
+            p {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+        }
+
+        &_anchors {
+            margin-top: 70px;
+
+            ul {
+                width: 500px;
+                margin: 0 auto;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                li {
+                    margin-bottom: 60px;
+
+                    a {
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #0A033C;
+                        background: #e4dfdf00;
+                        padding: 20px 30px;
+                    }
+
+
+                }
+
+                a:focus {
+                    background: #e4dfdf00;
+                    padding: 20px 30px;
+                    background: #FF6652;
+                    box-shadow: 0px 15px 50px rgba(255, 102, 82, 0.2);
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        &_standards {
+            display: flex;
+            align-items: center;
+            // gap: 37px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .card {
+                width: 290px;
+                padding: 0px 15px;
+                background: #FFFFFF;
+                border-radius: 15px;
+                text-align: center;
+                margin-bottom: 40px;
+
+                &_num {
+                    padding: 30px 0px 20px 0px;
+                    margin: 0 auto;
+
+                }
+
+                &_title {
+                    text-align: center;
+
+                    h4 {
+                        font-weight: 600;
+                        font-size: 25px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: #0A033C;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                &_desc {
+                    margin-bottom: 25px;
+
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 30px;
+                        text-align: center;
+                        color: #5D5A6F;
+                    }
+                }
+
+                &_btn {
+                    padding-bottom: 30px;
+
+                    button {
+                        padding: 12px 32px;
+                        border: 1px solid #9C4DF4;
+                        border-radius: 5px;
+                        background-color: #FFFFFF;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: #9C4DF4;
+                    }
+
+                    button:hover {
+                        cursor: pointer;
+                    }
+
+                    button:focus {
+                        background: #9C4DF4;
+                        color: #FFFFFF;
+                    }
+                }
+
+            }
+        }
+
+        &_btns {
+            margin-top: 20px;
+            text-align: center;
+
+            button {
+                padding: 20px 30px;
+                border: none;
+                background: #9C4DF4;
+                border-radius: 10px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+
+            button:focus {
+                @include hoverAndClick;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$phone) {
+    .qualify_items_title {
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+            line-height: 32px;
+            color: #0A033C;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 15.5px;
+            line-height: 24px;
+        }
+    }
+
+    .qualify_items_anchors {
+        margin-top: 70px;
+
+        ul {
+            width: 100%;
+            margin: 0 auto;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li {
+                margin-bottom: 60px;
+
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #0A033C;
+                    background: #e4dfdf00;
+                    padding: 15px 10px;
+                }
+
+
+            }
+
+            a:focus {
+                background: #e4dfdf00;
+                padding: 15px 10px;
+                background: #FF6652;
+                box-shadow: 0px 15px 50px rgba(255, 102, 82, 0.2);
+                border-radius: 10px;
+            }
+        }
+
+    }
+
+    .qualify_items_btns {
+        margin-top: 20px;
+        margin: 0 auto !important;
+
+        button {
+            margin-right:21px ;
+            padding: 20px 30px;
+            border: none;
+            background: #9C4DF4;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+
+        button:focus {
+            @include hoverAndClick;
+        }
+    }
+}

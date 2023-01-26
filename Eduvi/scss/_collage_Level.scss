@@ -1,0 +1,279 @@
+.collage_Level {
+    background: #D3D3D3;
+
+    &_items {
+        padding-top: 100px;
+        padding: 30px;
+
+        &_card {
+            width: 100%;
+            background: #EDE9F2;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            background-image: url('../img/collageBoy.png');
+            background-position: 102% 99%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+
+            &_content {
+                width: 50%;
+                padding: 113px 70px;
+
+                background-repeat: no-repeat;
+
+                &_title {
+                    width: 35%;
+                    background: #E4E2F4;
+                    border-radius: 10px;
+                    padding: 15px 20px;
+
+                    h5 {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 20px;
+                        color: #9C4DF4;
+                    }
+                }
+
+                &_add {
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+
+                    p {
+                        font-weight: 700;
+                        font-size: 39px;
+                        line-height: 55px;
+                        color: #0A033C;
+                    }
+                }
+
+                &_desc {
+                    margin-bottom: 40px;
+
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 30px;
+                        color: #5D5A6F;
+                    }
+                }
+
+                &_btn {
+                    button {
+                        @include btns;
+                    }
+
+                    button:focus {
+                        @include hoverAndClick;
+                    }
+                }
+            }
+
+            &_img {
+                width: 50%;
+                height: 641px;
+                position: relative;
+
+                img {
+                    position: absolute;
+                }
+
+                .Css {
+                    top: 18%;
+                    left: -6%;
+                }
+
+                .Php {
+                    top: 23%;
+                    right: 5%;
+                }
+
+                .Java {
+                    top: -2%;
+                    right: -5%;
+                }
+
+
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$tabled) {
+    .collage_Level {
+
+        &_items {
+
+            &_card {
+                background-image: url('../img/collageBoy.png');
+                background-position: 102% 99%;
+                background-size: 100% 73%;
+                background-repeat: no-repeat;
+
+                &_content {
+                    width: 50%;
+                    padding: 113px 70px;
+
+                    background-repeat: no-repeat;
+
+                    &_title {
+                        width: 35%;
+                        background: #E4E2F4;
+                        border-radius: 10px;
+                        padding: 15px 20px;
+
+                        h5 {
+                            font-weight: 500;
+                            font-size: 11px;
+                            line-height: 20px;
+                            color: #9C4DF4;
+                        }
+                    }
+
+                    &_add {
+                        margin-top: 15px;
+                        margin-bottom: 20px;
+
+                        p {
+                            font-weight: 700;
+                            font-size: 31px;
+                            line-height: 41px;
+                            color: #0A033C;
+                        }
+                    }
+
+                    &_desc {
+                        margin-bottom: 40px;
+
+                        p {
+                            font-weight: 400;
+                            font-size: 11px;
+                            line-height: 20px;
+                            color: #5D5A6F;
+                        }
+                    }
+
+                    &_btn {
+                        button {
+                            @include btns;
+                        }
+
+                        button:focus {
+                            @include hoverAndClick;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$phone) {
+    .collage_Level {
+        &_items {
+            padding-top: 100px;
+            padding: 30px;
+
+
+            &_card {
+                width: 100%;
+                background: #EDE9F2;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                background-image: url('../img/collageBoy.png');
+                background-position: 100% 100%;
+                background-size: 174% 35%;
+                background-repeat: no-repeat;
+
+                &_content {
+                    width: 100%;
+                    padding: 10px 10px;
+                    margin-top: 30px;
+
+                    background-repeat: no-repeat;
+
+                    &_title {
+                        width: 35%;
+                        background: #E4E2F4;
+                        border-radius: 10px;
+                        padding: 13px 7px;
+
+                        h5 {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: #9C4DF4;
+                        }
+                    }
+
+                    &_add {
+                        margin-top: 15px;
+                        margin-bottom: 20px;
+
+                        p {
+                            font-weight: 700;
+                            font-size: 28px;
+                            line-height: 32px;
+                            color: #0A033C;
+                        }
+                    }
+
+                    &_desc {
+                        margin-bottom: 40px;
+
+                        p {
+                            font-weight: 400;
+                            font-size: 16.6px;
+                            line-height: 24px;
+                            color: #5D5A6F;
+                        }
+                    }
+
+                    &_btn {
+                        button {
+                            @include btns;
+                        }
+
+                        button:focus {
+                            @include hoverAndClick;
+                        }
+                    }
+                }
+
+                &_img {
+                    width: 100%;
+                    height: 367px;
+                    position: relative;
+
+
+                    img {
+                        position: absolute;
+                        width: 25%;
+                    }
+
+                    .Css {
+                        top: 35%;
+                        left: 8%;
+                    }
+
+                    .Php {
+                        top: 31%;
+                        right: 11%;
+                    }
+
+                    .Java {
+                        top: 17%;
+                        right: 8%;
+                    }
+
+
+
+                }
+            }
+        }
+    }
+}
